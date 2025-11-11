@@ -5,10 +5,12 @@ import Nor from "./components/Nor";
 import Not from "./components/Not";
 import Xor from "./components/Xor";
 import Or from "./components/Or";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <div>
+      <Navbar/>
       <And />
       <Nand />
       <Nor />
