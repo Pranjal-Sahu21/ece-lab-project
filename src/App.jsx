@@ -5,16 +5,26 @@ import Nor from "./components/Nor";
 import Not from "./components/Not";
 import Xor from "./components/Xor";
 import Or from "./components/Or";
+import HalfAdder from "./components/HalfAdder";
+import FullAdder from "./components/FullAdder";
+import HalfSubtractor from "./components/HalfSubtractor";
+import FullSubtractor from "./components/FullSubtractor";
+import Home from "./components/Home";
 
 const App = () => {
   return (
     <div>
+      <Home/>
       <And />
       <Nand />
       <Nor />
       <Not />
       <Or />
       <Xor />
+      <HalfAdder />
+      <FullAdder />
+      <HalfSubtractor />
+      <FullSubtractor />
       
     </div>
   );
