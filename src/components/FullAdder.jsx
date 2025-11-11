@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { fullAdder } from "../assets";
 
 export default function FullAdder() {
   const [inputA, setInputA] = useState(0);
@@ -17,7 +18,7 @@ export default function FullAdder() {
         {/* Image + Description */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="w-full h-48 flex items-center justify-center border-2 border-dashed rounded-2xl">
-            <span className="text-gray-500">Full Adder Image Placeholder</span>
+            <img src={fullAdder} alt="fullAdder" className="h-full" />
           </div>
 
           <div className="p-4 rounded-xl bg-gray-100">

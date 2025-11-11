@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { or } from "../assets";
 
 export default function Or() {
   const [inputA, setInputA] = useState(0);
@@ -12,7 +13,7 @@ export default function Or() {
       <div className="w-full max-w-6xl mx-auto p-6 space-y-6 min-h-screen">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="w-full h-48 flex items-center justify-center border-2 border-dashed rounded-2xl">
-            <span className="text-gray-500">OR Gate Image Placeholder</span>
+            <img src={or} alt="or" className="h-full" />
           </div>
 
           <div className="p-4 rounded-xl bg-gray-100 h-full flex flex-col justify-center">

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { halfAdder } from "../assets";
 
 export default function HalfAdder() {
   const [inputA, setInputA] = useState(0);
@@ -10,14 +11,14 @@ export default function HalfAdder() {
 
   return (
     
-    <div id="adders">
+    <div id="adders" className="pt-25">
       <h1 className="text-3xl font-bold text-center mb-6">Half Adder</h1>
       <div className="w-full max-w-6xl mx-auto p-6 space-y-6 min-h-screen">
         
         {/* Image + Description */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="w-full h-48 flex items-center justify-center border-2 border-dashed rounded-2xl">
-            <span className="text-gray-500">Half Adder Image Placeholder</span>
+            <img src={halfAdder} alt="halfAdder" className="h-full" />
           </div>
 
           <div className="p-4 rounded-xl bg-gray-100">
