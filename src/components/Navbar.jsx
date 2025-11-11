@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { navigation } from "./constants";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { logo } from "../assets";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +51,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center w-[40%] min-w-fit">
           <img
-            src="src/assets/logo.png"
+            src={logo}
             alt="logo"
             className="pt-1.5 w-12 sm:w-14 md:w-16 lg:w-[70px]"
           />
