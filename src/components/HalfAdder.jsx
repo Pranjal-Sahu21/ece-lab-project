@@ -9,7 +9,8 @@ export default function HalfAdder() {
   const carry = inputA && inputB ? 1 : 0; // AND
 
   return (
-    <>
+    
+    <div id="adders">
       <h1 className="text-3xl font-bold text-center mb-6">Half Adder</h1>
       <div className="w-full max-w-6xl mx-auto p-6 space-y-6 min-h-screen">
         
@@ -135,6 +136,6 @@ export default function HalfAdder() {
 
         </div>
       </div>
-    </>
+    </div>
   );
 }

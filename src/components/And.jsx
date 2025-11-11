@@ -7,7 +7,7 @@ export default function And() {
   const output = inputA && inputB ? 1 : 0;
 
   return (
-    <>
+    <div className="relative top-25">
       <h1 className="text-3xl font-bold text-center mb-6">AND Gate</h1>
       <div className="w-full max-w-6xl mx-auto p-6 space-y-6 min-h-screen">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -102,6 +102,6 @@ export default function And() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -5,6 +5,7 @@ import Nor from "./components/Nor";
 import Not from "./components/Not";
 import Xor from "./components/Xor";
 import Or from "./components/Or";
+import Navbar from "./components/Navbar";
 import HalfAdder from "./components/HalfAdder";
 import FullAdder from "./components/FullAdder";
 import HalfSubtractor from "./components/HalfSubtractor";
@@ -14,7 +15,8 @@ import Home from "./components/Home";
 const App = () => {
   return (
     <div>
-      <Home/>
+      <Navbar/>
+      {/* <Home/> */}
       <And />
       <Nand />
       <Nor />
