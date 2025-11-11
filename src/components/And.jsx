@@ -9,7 +9,7 @@ export default function And() {
 
   return (
     <div className="relative pt-25" id="ic">
-      <h1 className="text-3xl font-bold text-center mb-6">AND Gate</h1>
+      <h1 className="text-3xl font-bold text-center mb-6 underline">AND Gate</h1>
       <div className="w-full max-w-6xl mx-auto p-6 space-y-6 min-h-screen">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="w-full h-48 flex items-center justify-center border-2 border-dashed rounded-2xl">

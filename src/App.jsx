@@ -14,7 +14,7 @@ import Home from "./components/Home";
 
 const App = () => {
   return (
-    <div>
+    <div >
       <Navbar/>
       <Home/>
       <And />
@@ -27,7 +27,6 @@ const App = () => {
       <FullAdder />
       <HalfSubtractor />
       <FullSubtractor />
-      
     </div>
   );
 };

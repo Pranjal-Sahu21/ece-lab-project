@@ -8,6 +8,7 @@ import not from "./not.jpg";
 import nand from "./nand.jpg";
 import nor from "./nor.jpg";
 import xor from "./xor.jpg";
+
 export {
     fullAdder,
     halfAdder,
