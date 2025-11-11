@@ -5,21 +5,19 @@ export default function HalfSubtractor() {
   const [inputA, setInputA] = useState(0);
   const [inputB, setInputB] = useState(0);
 
-  // Half Subtractor logic
-  const difference = inputA ^ inputB; // XOR
+  const difference = inputA ^ inputB;
   const borrow = inputA === 0 && inputB === 1 ? 1 : 0;
 
   return (
     <div id="subtractors" className="pt-25">
-      <h1 className="text-3xl font-bold text-center mb-6 underline">Half Subtractor</h1>
+      <h1 className="text-3xl font-bold text-center mb-6 underline">HALF SUBTRACTOR</h1>
       <div className="w-full max-w-6xl mx-auto p-6 space-y-6 min-h-screen">
-        {/* Image + Description */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="w-full h-48 flex items-center justify-center border-2 border-dashed rounded-2xl">
             <img src={halfSubtractor} alt="halfSubtractor" className="h-full" />
           </div>
 
-          <div className="p-4 rounded-xl bg-gray-100">
+          <div className="p-4 rounded-xl bg-gray-100 shadow-lg">
             <h2 className="text-xl font-semibold mb-2">
               Half Subtractor Description
             </h2>
@@ -32,10 +30,8 @@ export default function HalfSubtractor() {
           </div>
         </div>
 
-        {/* Truth Table + Working */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Truth Table */}
-          <div className="p-4 rounded-xl bg-gray-100">
+          <div className="p-4 rounded-xl bg-gray-100 shadow-lg">
             <h2 className="text-xl font-semibold mb-3">Truth Table</h2>
             <table className="w-full text-center border-collapse">
               <thead>
@@ -75,12 +71,10 @@ export default function HalfSubtractor() {
             </table>
           </div>
 
-          {/* Interactive Working */}
-          <div className="p-4 rounded-xl bg-gray-100 space-y-4">
+          <div className="p-4 rounded-xl bg-gray-100 shadow-lg space-y-4">
             <h2 className="text-xl font-semibold">Working (Interactive)</h2>
 
             <div className="flex items-center justify-around gap-6">
-              {/* Input A */}
               <div className="flex flex-col items-center">
                 <div
                   onClick={() => setInputA(inputA === 0 ? 1 : 0)}
@@ -93,7 +87,6 @@ export default function HalfSubtractor() {
                 <span className="mt-2 font-semibold">A: {inputA}</span>
               </div>
 
-              {/* Input B */}
               <div className="flex flex-col items-center">
                 <div
                   onClick={() => setInputB(inputB === 0 ? 1 : 0)}
@@ -107,9 +100,7 @@ export default function HalfSubtractor() {
               </div>
             </div>
 
-            {/* Outputs */}
             <div className="grid grid-cols-2 gap-6 pt-4">
-              {/* Difference */}
               <div className="flex flex-col items-center p-4 rounded-xl space-y-3">
                 <div
                   className={`w-14 h-14 rounded-full shadow border-2 transition-all duration-300 ${
@@ -123,7 +114,6 @@ export default function HalfSubtractor() {
                 </h3>
               </div>
 
-              {/* Borrow */}
               <div className="flex flex-col items-center p-4 rounded-xl space-y-3">
                 <div
                   className={`w-14 h-14 rounded-full shadow border-2 transition-all duration-300 ${

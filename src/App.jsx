@@ -14,14 +14,14 @@ import Home from "./components/Home";
 
 const App = () => {
   return (
-    <div >
+    <div className="app-container">
       <Navbar/>
       <Home/>
       <And />
+      <Or />
+      <Not />
       <Nand />
       <Nor />
-      <Not />
-      <Or />
       <Xor />
       <HalfAdder />
       <FullAdder />
