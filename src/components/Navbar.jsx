@@ -48,7 +48,6 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-gray-200 shadow-lg">
       <div className="flex h-20 items-center justify-between px-6 lg:px-10">
-        {/* Logo */}
         <div className="flex items-center w-[40%] min-w-fit">
           <img
             src={logo}
@@ -60,7 +59,6 @@ const Navbar = () => {
           </h1>
         </div>
 
-        {/* Desktop Nav Links */}
         <nav className="hidden lg:flex w-[60%] justify-end">
           {navigation.map((item) => (
             <a
@@ -73,7 +71,6 @@ const Navbar = () => {
           ))}
         </nav>
 
-        {/* Hamburger (Mobile) */}
         <button
           className="lg:hidden text-gray-800"
           onClick={() => setIsOpen(!isOpen)}
@@ -82,7 +79,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Dropdown with Framer Motion */}
       <AnimatePresence>
         {isOpen && (
           <motion.div

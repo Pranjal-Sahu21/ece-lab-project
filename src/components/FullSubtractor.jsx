@@ -18,11 +18,11 @@ export default function FullSubtractor() {
       <h1 className="text-3xl font-bold text-center mb-6 underline">FULL SUBTRACTOR</h1>
       <div className="w-full max-w-6xl mx-auto p-6 space-y-6 min-h-screen">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="w-full h-48 flex items-center justify-center border-2 border-dashed rounded-2xl">
-            <img src={fullSubtractor} alt="fullSubtractor" className="h-full" />
+          <div className="w-full h-48 flex items-center justify-center rounded-2xl">
+            <img src={fullSubtractor} alt="fullSubtractor" className="w-[90%]" />
           </div>
 
-          <div className="p-4 rounded-xl bg-gray-100 shadow-lg">
+          <div className="p-4 rounded-xl bg-gray-100 h-full flex flex-col justify-center shadow-lg">
             <h2 className="text-xl font-semibold mb-2">
               Full Subtractor Description
             </h2>
@@ -43,8 +43,8 @@ export default function FullSubtractor() {
                   <th className="border p-2">A</th>
                   <th className="border p-2">B</th>
                   <th className="border p-2">Bin</th>
-                  <th className="border p-2">Difference</th>
-                  <th className="border p-2">Borrow</th>
+                  <th className="border p-2">D</th>
+                  <th className="border p-2">Bout</th>
                 </tr>
               </thead>
               <tbody>
@@ -159,7 +159,7 @@ export default function FullSubtractor() {
                   }`}
                 />
                 <h3 className="text-lg font-semibold">
-                  Difference: {difference}
+                  D: {difference}
                 </h3>
               </div>
 
@@ -171,7 +171,7 @@ export default function FullSubtractor() {
                       : "bg-red-500 border-red-700 shadow-[0_0_15px_rgba(255,0,0,0.7)]"
                   }`}
                 />
-                <h3 className="text-lg font-semibold">Borrow: {borrow}</h3>
+                <h3 className="text-lg font-semibold">Bout: {borrow}</h3>
               </div>
             </div>
           </div>

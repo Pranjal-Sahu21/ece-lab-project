@@ -12,8 +12,8 @@ export default function Xor() {
       <h1 className="text-3xl font-bold text-center mb-6 underline">XOR GATE (IC7486)</h1>
       <div className="w-full max-w-6xl mx-auto p-6 space-y-6 min-h-screen">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="w-full h-48 flex items-center justify-center border-1 border-dashed rounded-2xl">
-            <img src={xor} alt="xor" className="h-full" />
+          <div className="w-full h-48 flex items-center justify-center rounded-2xl">
+            <img src={xor} alt="xor" className="w-[60%]" />
           </div>
 
           <div className="p-4 rounded-xl bg-gray-100 shadow-lg h-full flex flex-col justify-center">

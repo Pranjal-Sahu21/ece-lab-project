@@ -15,11 +15,11 @@ export default function FullAdder() {
       <h1 className="text-3xl font-bold text-center mb-6 underline">FULL ADDER</h1>
       <div className="w-full max-w-6xl mx-auto p-6 space-y-6 min-h-screen">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="w-full h-48 flex items-center justify-center border-2 border-dashed rounded-2xl">
+          <div className="w-full h-48 flex items-center justify-center rounded-2xl">
             <img src={fullAdder} alt="fullAdder" className="h-full" />
           </div>
 
-          <div className="p-4 rounded-xl bg-gray-100 shadow-lg">
+          <div className="p-4 rounded-xl bg-gray-100 h-full flex flex-col justify-center shadow-lg">
             <h2 className="text-xl font-semibold mb-2">
               Full Adder Description
             </h2>
@@ -41,8 +41,8 @@ export default function FullAdder() {
                   <th className="border p-2">A</th>
                   <th className="border p-2">B</th>
                   <th className="border p-2">Cin</th>
-                  <th className="border p-2">Sum</th>
-                  <th className="border p-2">Carry</th>
+                  <th className="border p-2">S</th>
+                  <th className="border p-2">Cout</th>
                 </tr>
               </thead>
               <tbody>
@@ -156,7 +156,7 @@ export default function FullAdder() {
                       : "bg-red-500 border-red-700 shadow-[0_0_15px_rgba(255,0,0,0.7)]"
                   }`}
                 ></div>
-                <h3 className="text-lg font-semibold">Sum: {sum}</h3>
+                <h3 className="text-lg font-semibold">S: {sum}</h3>
               </div>
 
               <div className="flex flex-col items-center p-4 rounded-xl space-y-3">
@@ -167,7 +167,7 @@ export default function FullAdder() {
                       : "bg-red-500 border-red-700 shadow-[0_0_15px_rgba(255,0,0,0.7)]"
                   }`}
                 ></div>
-                <h3 className="text-lg font-semibold">Carry: {carry}</h3>
+                <h3 className="text-lg font-semibold">Cout: {carry}</h3>
               </div>
             </div>
           </div>
