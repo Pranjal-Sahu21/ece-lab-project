@@ -80,7 +80,7 @@ export default function Xor() {
               <div className="flex flex-col items-center">
                 <div
                   onClick={() => setInputB(inputB ? 0 : 1)}
-                  className={`w-12 h-12 rounded-full cursor-pointer shadow transition-all duration-300 border-1 ${
+                  className={`w-12 h-12 rounded-full cursor-pointer shadow transition-all duration-300 border ${
                     inputB
                       ? "bg-green-500 border-green-700 shadow-[0_0_15px_rgba(0,255,0,0.7)]"
                       : "bg-red-500 border-red-700 shadow-[0_0_15px_rgba(255,0,0,0.7)]"
@@ -92,7 +92,7 @@ export default function Xor() {
 
             <div className="flex flex-col items-center p-4 rounded-xl space-y-3">
               <div
-                className={`w-14 h-14 rounded-full shadow border-1 transition-all duration-300 ${
+                className={`w-14 h-14 rounded-full shadow border transition-all duration-300 ${
                   output
                     ? "bg-green-500 border-green-700 shadow-[0_0_15px_rgba(0,255,0,0.7)]"
                     : "bg-red-500 border-red-700 shadow-[0_0_15px_rgba(255,0,0,0.7)]"

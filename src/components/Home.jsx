@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="relative flex flex-col justify-center items-center h-[100vh] gap-6 lg:gap-10 px-4 sm:px-6 lg:px-10 text-center">
+    <div className="relative flex flex-col justify-center items-center h-screen gap-6 lg:gap-10 px-4 sm:px-6 lg:px-10 text-center">
       <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl underline text-gray-700">
         BASIC ELECTRONICS LAB PROJECT
       </h1>
